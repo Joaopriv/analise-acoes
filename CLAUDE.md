@@ -25,3 +25,14 @@ Single-file Streamlit app (`app.py`) that fetches and visualizes Brazilian stock
 - Tab 4 — Daily trading volume (3-row bar subplot)
 
 The `TICKERS` dict maps display names to Yahoo Finance symbols (`.SA` suffix = B3 exchange). The `CORES` dict maps the same names to brand colors used consistently across all charts.
+
+## GitHub Repository
+
+Repositório: https://github.com/Joaopriv/analise-acoes
+
+**Sincronização automática:** toda vez que Claude Code edita ou cria um arquivo, um hook `PostToolUse` faz automaticamente `git add -A`, `git commit` e `git push` para o repositório remoto. A configuração está em `.claude/settings.json`.
+
+Para forçar um push manual:
+```bash
+git add -A && git commit -m "sua mensagem" && git push
+```
